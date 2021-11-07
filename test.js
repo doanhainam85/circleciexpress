@@ -7,6 +7,7 @@ describe("Example Test 1", () => {
       method: "GET",
       url: "/example"
     });
+
     const mockResponse = httpMocks.createResponse();
     exampleRouteHandler(mockRequest, mockResponse);
     const actualResponseBody = mockResponse._getData();
